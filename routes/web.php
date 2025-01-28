@@ -9,3 +9,4 @@ Route::get('/register', [AuthController::class, 'register'])->name('register');
 Route::post('/submitregister', [AuthController::class, 'submitRegister'])->name('register');
 Route::post('/submitlogin', [AuthController::class, 'submitLogin'])->name('submitlogin');
 Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard');
+Route::get('/admin', [AuthController::class, 'admin'])->name('admin');
