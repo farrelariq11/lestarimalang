@@ -22,7 +22,7 @@
             <div class="pl-[3.50px] pr-[5.83px] pt-[3.50px] pb-[5.83px] left-0 top-0 absolute justify-center items-center inline-flex overflow-hidden"></div>
         </div>
         <div class="left-[60px] top-[291px] absolute">
-            <span class="text-[#fdfffc] text-6xl font-bold font-['Inter']">Lindungi </span>
+            <span class="text-[#fdfffc] text-6xl font-bold font-['Inter']">Lindung </span>
             <span class="text-[#fdfffc] text-6xl font-bold font-['Inter']">Malang<br/></span>
             <span class="text-[#fdfffc] text-6xl font-bold font-['Inter']">Dari sampah</span>
         </div>
