@@ -18,12 +18,12 @@
             <span class="text-[#09c25a] text-[28px] font-bold font-['Inter']">Lestari </span>
             <span class="text-black text-[28px] font-bold font-['Inter']">Malang.</span>
         </div>
-        <div class="w-7 h-7 left-[1320px] top-[34px] absolute overflow-hidden">
+        <div class="w-7 h-7 left-[1220px] top-[34px] absolute overflow-hidden">
             <div class="pl-[3.50px] pr-[5.83px] pt-[3.50px] pb-[5.83px] left-0 top-0 absolute justify-center items-center inline-flex overflow-hidden"></div>
         </div>
         <div class="left-[60px] top-[291px] absolute">
             <span class="text-[#fdfffc] text-6xl font-bold font-['Inter']">Ayo Lindungi</span>
-            <span class="text-[#fdfffc] text-6xl font-bold font-['Inter']">Malang Jaya<br/></span>
+            <span class="text-[#fdfffc] text-6xl font-bold font-['Inter']">Malang<br/></span>
             <span class="text-[#fdfffc] text-6xl font-bold font-['Inter']">Dari sampah</span>
         </div>
     </div>
