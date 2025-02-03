@@ -23,7 +23,7 @@
         </div>
         <div class="left-[60px] top-[291px] absolute">
             <span class="text-[#fdfffc] text-6xl font-bold font-['Inter']">Ayo Lindungi</span>
-            <span class="text-[#fdfffc] text-6xl font-bold font-['Inter']">Malang<br/></span>
+            <span class="text-[#fdfffc] text-6xl font-bold font-['Inter']">Malang Jaya<br/></span>
             <span class="text-[#fdfffc] text-6xl font-bold font-['Inter']">Dari sampah</span>
         </div>
     </div>
