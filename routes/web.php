@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AdminController;
+use App\Http\Controllers\AdminUserController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
@@ -20,4 +21,7 @@ Route::get('/admin/adminuser', function () {return view('admin.adminuser');});
 Route::get('/admin/laporan', function () {return view('admin.laporan');});
 Route::get('/admin/history', function () {return view('admin.history');});
 Route::get('/admin/adminartikel', function () {return view('admin.adminartikel');});
+Route::get('/admin/adminuser', [AdminUserController::class, 'index'])->name('admin.adminuser');
+Route::delete('/admin/adminuser/{id}', [AdminUserController::class, 'destroy'])->name('admin.users.destroy');
+
 

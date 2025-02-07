@@ -1,3 +1,4 @@
+
 @extends('adminlte::page')
 
 @section('title', 'Admin User')
@@ -19,22 +20,23 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>1</td>
-                        <td>Bro ku</td>
-                        <td>broku@example.com</td>
-                        <td>
-                            <button class="btn btn-danger btn-sm">Hapus</button>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>Bro lu</td>
-                        <td>brolu@example.com</td>
-                        <td>
-                            <button class="btn btn-danger btn-sm">Hapus</button>
-                        </td>
-                    </tr>
+                    @foreach($users as $user)
+                        <tr>
+                            <td>{{ $loop->iteration }}</td>
+                            <td>{{ $user->name }}</td>
+                            <td>{{ $user->email }}</td>
+                            <td>
+                                <form action="{{ route('admin.users.destroy', $user->id) }}" method="POST" style="display:inline;">
+
+                                    @csrf
+                                    @method('DELETE')
+                                    <button type="submit" class="btn btn-danger btn-sm" onclick="return confirm('Apakah Anda yakin ingin menghapus user ini?')">
+                                        Hapus
+                                    </button>
+                                </form>
+                            </td>
+                        </tr>
+                    @endforeach
                 </tbody>
             </table>
         </div>
@@ -48,4 +50,10 @@
             border: none;
         }
     </style>
+@stop
+
+@section('js')
+    <script>
+        console.log("Hi, I'm using the Laravel-AdminLTE package!");
+    </script>
 @stop
