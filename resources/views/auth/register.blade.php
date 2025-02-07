@@ -21,7 +21,7 @@
 
         <!-- Right Section -->
         <div class="w-1/2 bg-[#276561] flex flex-col justify-center items-center px-10">
-            <h2 class="text-5xl font-extrabold text-white mb-4">Get’s started.</h2>
+            <h2 class="text-5xl font-extrabold text-white mb-4">Get's started.</h2>
             <p class="text-white text-2xl mb-8">
                 Already have an account?
                 <a href="{{ route('login') }}" class="font-extrabold underline">Log in</a>

@@ -34,23 +34,23 @@
             <form action="{{ route('submitlogin') }}" method="POST" class="w-full max-w-md space-y-5">
                 @csrf
                 <div class="w-full bg-white rounded-lg flex items-center px-4 py-3">
-                    <input 
-                        type="text" 
-                        name="email" 
-                        placeholder="Email" 
+                    <input
+                        type="text"
+                        name="email"
+                        placeholder="Email"
                         class="w-full text-lg text-gray-500 focus:outline-none"
                     >
                 </div>
                 <div class="w-full bg-white rounded-lg flex items-center px-4 py-3">
-                    <input 
-                        type="password"     
-                        name="password" 
-                        placeholder="Password" 
+                    <input
+                        type="password"
+                        name="password"
+                        placeholder="Password"
                         class="w-full text-lg text-gray-500 focus:outline-none"
                     >
                 </div>
-                <button 
-                    type="submit" 
+                <button
+                    type="submit"
                     class="w-full bg-white text-[#276561] text-xl font-bold rounded-lg py-3 border border-[#276561] hover:bg-gray-100 transition duration-300"
                 >
                     Login
