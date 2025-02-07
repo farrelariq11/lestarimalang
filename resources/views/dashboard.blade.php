@@ -11,9 +11,10 @@
         <div class="w-[100vw] h-24 left-0 top-0 absolute bg-white">
 
         </div>
-        <div class="left-[982px] top-[33px] absolute text-center text-[#09c25a] text-2xl font-bold font-['Inter']">Home</div>
+        <div class="left-[982px] top-[33px] absolute text-center text-[#09c25a] text-2xl font-bold font-['inter']">Home</div>
         <div class="left-[1193px] top-[33px] absolute text-center text-[#020202] text-2xl font-bold font-['Inter']">Article</div>
         <div class="left-[1090px] top-[33px] absolute text-center text-[#1b1b1b] text-2xl font-bold font-['Inter']">Maps</div>
+        <div class="left-[1300px] top-[33px] absolute text-center text-[#1b1b1b] text-2xl font-bold font-['Inter']">Report</div>
         <div class="left-[60px] top-[33px] absolute text-center">
             <span class="text-[#09c25a] text-[28px] font-bold font-['Inter']">Lestari </span>
             <span class="text-black text-[28px] font-bold font-['Inter']">Malang.</span>

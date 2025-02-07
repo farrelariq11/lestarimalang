@@ -20,4 +20,6 @@ Route::get('/admin/adminuser', function () {return view('admin.adminuser');});
 Route::get('/admin/laporan', function () {return view('admin.laporan');});
 Route::get('/admin/history', function () {return view('admin.history');});
 Route::get('/admin/adminartikel', function () {return view('admin.adminartikel');});
+Route::get('/report', function () {return view('auth.report');});
+Route::get('/artikel', function () {return view('auth.artikel');});
 
