@@ -23,5 +23,7 @@ Route::get('/admin/history', function () {return view('admin.history');});
 Route::get('/admin/adminartikel', function () {return view('admin.adminartikel');});
 Route::get('/admin/adminuser', [AdminUserController::class, 'index'])->name('admin.adminuser');
 Route::delete('/admin/adminuser/{id}', [AdminUserController::class, 'destroy'])->name('admin.users.destroy');
-
+Route::get('/report', function () {return view('report');});
+Route::get('/dashboard', function () {return view('dashboard');});
+Route::get('/artikel', function () {return view('artikel');});
 

@@ -3,19 +3,26 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Form Pendaftaran - Lestari Malang</title>
+    <title>Form Report - Lestari Malang</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 <body class="bg-gray-100">
-    <nav class="bg-gray-200 p-4 flex justify-between items-center">
-        <a href="#" class="text-green-600 font-bold text-xl">Lestari <span class="text-black">Malang</span></a>
-        <div class="space-x-4">
-            <a href="#" class="text-gray-800 hover:text-green-600">Home</a>
-            <a href="#" class="text-gray-800 hover:text-green-600">Report</a>
-            <a href="#" class="text-gray-800 hover:text-green-600">Maps</a>
-            <a href="#" class="text-gray-800 hover:text-green-600">Article</a>
+    <nav class="bg-white p-4 flex justify-between items-center px-8">
+        <div class="left-[60px] text-center">
+            <span class="text-[#09c25a] text-[28px] font-bold font-['Inter']">Lestari </span>
+            <span class="text-black text-[28px] font-bold font-['Inter']">Malang.</span>
         </div>
+
+        <div class="flex space-x-8 ml-auto">
+            <a href="/dashboard" class="text-black text-2xl font-bold font-['Inter'] hover:text-[#09c25a]">Home</a>
+            <a href="/artikel" class="text-gray-800 hover:text-green-600 text-2xl font-bold font-['Inter']">Article</a>
+            <a href="#" class="text-black text-2xl font-bold font-['Inter'] hover:text-[#09c25a]">Maps</a>
+            <a href="/report" class="text-black text-2xl font-bold font-['Inter'] hover:text-[#09c25a]">Report</a>
+        </div>
+
+        <div class="w-7 h-7 overflow-hidden"> </div>
     </nav>
+
     <div class="max-w-4xl mx-auto mt-10 p-5 bg-white shadow-lg rounded-lg">
         <h2 class="text-2xl font-bold text-gray-800 mb-5">Form Report</h2>
         <form action="#" method="POST">
