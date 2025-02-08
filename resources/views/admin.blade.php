@@ -60,7 +60,7 @@
         <div class="col-md-3">
             <div class="small-box bg-danger">
                 <div class="inner">
-                    <h3>{{ $userCount ?? 0 }}</h3>
+                    <h3>{{ $userCount }}</h3>
                     <p>User Terdaftar</p>
                 </div>
                 <div class="icon">

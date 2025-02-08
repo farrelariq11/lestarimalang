@@ -7,6 +7,13 @@ use Illuminate\Http\Request;
 
 class AdminUserController extends Controller
 {
+
+    public function admin()
+    {
+        $userCount = User::count(); // Ambil jumlah user
+        return view('admin', compact('userCount'));
+    }
+
     // Method untuk menampilkan daftar user
     public function index()
     {

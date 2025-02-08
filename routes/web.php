@@ -26,4 +26,5 @@ Route::delete('/admin/adminuser/{id}', [AdminUserController::class, 'destroy'])-
 Route::get('/report', function () {return view('report');});
 Route::get('/dashboard', function () {return view('dashboard');});
 Route::get('/artikel', function () {return view('artikel');});
+Route::get('/admin', [AdminUserController::class, 'admin'])->name('admin');
 
