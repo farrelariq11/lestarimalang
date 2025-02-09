@@ -11,17 +11,22 @@ class AuthController extends Controller
     public function login(){
         return view('auth.login');
     }
+
     public function register(){
         return view('auth.register');
     }
+
     public function admin(Request $request){
-     return view('admin');   
+        return view('admin');   
     }
+
     public function submitRegister(Request $request){
-        
-        $email=$request->email;
-        $username=$request->username;
-        $password=$request->password;
+        $email = $request->email;
+        $username = $request->username;
+        $password = $request->password;
+
+        // Hash password sebelum menyimpan ke database
+        $hashedPassword = bcrypt($password);
 
         User::create([
             'email' => $email,
@@ -34,17 +39,32 @@ class AuthController extends Controller
     }
 
     public function submitLogin(Request $request){
-        $email=$request->email;
-        $password=$request->password;
+        $email = $request->email;
+        $password = $request->password;
 
-        if(Auth::attempt(['email' => $email, 'password' => $password])){
-            if(Auth::user()->role == 'user'){
-                return redirect('/dashboard');
-            }
-            else if(Auth::user()->role =='admin'){
+        // Coba melakukan login
+        if (Auth::attempt(['email' => $email, 'password' => $password])) {
+            // Simpan email pengguna ke dalam session
+            session(['user_email' => $email]);
+
+            // Redirect berdasarkan role
+            if (Auth::user()->role == 'user') {
+                return redirect('/');
+            } else if (Auth::user()->role == 'admin') {
                 return redirect('/admin');
             }
         }
-        return redirect()->back();
+        return redirect()->back()->withErrors([]);
     }
+    public function logout(Request $request)
+{
+    // Hapus session user_email
+    $request->session()->forget('user_email');
+
+    // Logout user
+    Auth::logout();
+
+    // Redirect ke halaman login dengan pesan sukses
+    return redirect()->route('login');
+}
 }

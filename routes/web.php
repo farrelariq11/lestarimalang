@@ -7,10 +7,10 @@ use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/login', [AuthController::class, 'login'])->name('login');
-Route::get('/', [AuthController::class, 'register'])->name('register');
+Route::get('/register', [AuthController::class, 'register'])->name('register');
 Route::post('/submitregister', [AuthController::class, 'submitRegister'])->name('register');
 Route::post('/submitlogin', [AuthController::class, 'submitLogin'])->name('submitlogin');
-Route::get('/dashboard', [DashboardController::class, 'dashboard'])->name('dashboard');
+Route::get('/', [DashboardController::class, 'dashboard'])->name('dashboard');
 Route::get('/admin', [AuthController::class, 'admin'])->name('admin');
 Route::get('/adminuser', [AdminController::class, 'adminuser'])->name('adminuser');
 Route::get('/admin', [AdminController::class, 'admin'])->name('admin');
@@ -27,4 +27,6 @@ Route::get('/report', function () {return view('report');});
 Route::get('/dashboard', function () {return view('dashboard');});
 Route::get('/artikel', function () {return view('artikel');});
 Route::get('/admin', [AdminUserController::class, 'admin'])->name('admin');
+Route::get('/register', function () {return view('auth.register');});
+Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
 

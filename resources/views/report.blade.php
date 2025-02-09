@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Report - Lestari Malang</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body class="bg-gray-100">
     <nav class="bg-white p-4 flex justify-between items-center px-8">
@@ -18,6 +19,12 @@
             <a href="/artikel" class="text-gray-800 hover:text-green-600 text-2xl font-bold font-['Inter']">Article</a>
             <a href="#" class="text-black text-2xl font-bold font-['Inter'] hover:text-[#09c25a]">Maps</a>
             <a href="/report" class="text-black text-2xl font-bold font-['Inter'] hover:text-[#09c25a]">Report</a>
+            @if(session('user_email'))
+            <div class="flex items-center space-x-4">
+                <i class="fas fa-user text-black text-2xl" title="{{ session('user_email') }}"></i>
+            </div>
+        @else
+        @endif
         </div>
 
         <div class="w-7 h-7 overflow-hidden"> </div>
