@@ -5,6 +5,7 @@ use App\Http\Controllers\AdminUserController;
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\DashboardController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\LaporanController;
 
 Route::get('/login', [AuthController::class, 'login'])->name('login');
 Route::get('/register', [AuthController::class, 'register'])->name('register');
@@ -29,4 +30,5 @@ Route::get('/artikel', function () {return view('artikel');});
 Route::get('/admin', [AdminUserController::class, 'admin'])->name('admin');
 Route::get('/register', function () {return view('auth.register');});
 Route::post('/logout', [AuthController::class, 'logout'])->name('logout');
+
 
